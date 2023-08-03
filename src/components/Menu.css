@@ -1,0 +1,43 @@
+.Menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    margin-top: 1.5rem;
+}
+
+.Menu .tabs{
+    cursor: pointer;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    color: #717579;
+    padding: 0;
+    position:relative;
+}
+
+.Menu .tabs svg{
+    padding:5px;
+    width:1.7rem;
+    height:1.7em;
+}
+
+.Menu .tabs p{
+    margin-left:1rem;
+    font-size: 0.9rem;;
+}
+
+.Menu .active svg{
+    background-color: rgba(43, 193, 85, 0.15);
+    border-radius: 0.625rem;
+    color:#2BC155;
+}
+
+.Menu .tabs .selection{
+    height:1.5rem;
+    width:0.3em;
+    background-color:#2BC155;
+    position:absolute;
+    right:0;
+    border-radius: 40px 0px 0px 40px;
+}

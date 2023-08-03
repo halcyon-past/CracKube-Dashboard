@@ -1,0 +1,167 @@
+.SectionSecond {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 2rem;
+}
+
+.SectionSecond .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-around;
+    height: 25rem;
+    width: 20rem;
+    background-color: #202020;
+    border-radius: 0.75rem;
+  }
+
+  .SectionSecond .right {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 45rem;
+    background-color: #202020;
+    border-radius: 0.75rem;
+  }
+
+  .SectionSecond .right .header {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem 1rem 3rem;
+  }
+
+  .SectionSecond .left .header {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .SectionSecond .left .pin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem 3rem 2rem;
+  }
+
+  .SectionSecond .left p{
+    padding: 0rem 2rem 0rem 2rem;
+  }
+
+  .SectionSecond .left input[type="text"]{
+    padding: 0rem 2rem 0rem 2rem;
+    width:80%;
+    margin-left: 2rem;
+    height: 2.5rem;
+    background-color: #161717;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+  }
+
+  .SectionSecond .left .pin input[type="password"]{
+    padding: 0rem 2rem 0rem 2rem;
+    width:40%;
+    height: 2.5rem;
+    background-color: #161717;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+  }
+
+  .SectionSecond .left .pin input[type="password"]:placeholder-shown{
+    padding:0;
+    padding-left: 18px;
+  }
+
+  .SectionSecond .left .pin span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #369DC9;
+    color:#202020;
+    border-radius: 10px;
+    width:55%;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    padding:5px;
+  }
+
+  .SectionSecond .left .pin input:placeholder-shown {
+    text-overflow: ellipsis;
+  }
+
+  .SectionSecond .right .item_header {
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: 10rem 10rem 8rem 8rem 5rem;
+    place-items: center;
+    padding-left: 3rem;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .SectionSecond .right .item_header span:nth-child(1) {
+    justify-self: start;
+  }
+
+  .SectionSecond .right .item {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: 10rem 10rem 8rem 8rem 5rem;
+    place-items: center;
+    padding-left: 3rem;
+    padding: 1rem 3rem 0.7rem 3rem;
+    border-top: 1px solid #161717;
+  }
+
+  .SectionSecond .right .item .user {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+  }
+
+  .SectionSecond .right .item .user svg{
+    margin-right: 1rem;
+  }
+
+  .SectionSecond .right .records .cash{
+    font-weight: 700;
+  }
+
+  .SectionSecond .right .records .status {
+    font-size: 0.9rem;
+    padding: 5px 10px 5px 10px;
+    width: 7rem;
+    height:1.8rem;
+    text-align: center;
+    border-radius: 0.4375rem;
+    color: #202020;
+    font-weight: 600;
+  }
+
+  .SectionSecond .right .records .paid {
+    background-color: #2BC155;
+  }
+
+  .SectionSecond .right .records .unpaid {
+    background-color: #FD6162;
+  }
+
+  .SectionSecond .right .records .pending {
+    background-color: #FFF;
+  }
+

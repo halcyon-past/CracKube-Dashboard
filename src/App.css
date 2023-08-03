@@ -1,0 +1,15 @@
+.App{
+  margin:0;
+  padding: 0;
+  display:flex;
+  width:100%;
+  height:100vh;
+}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  width:calc(100% - 15.7625rem);
+  height:100%;
+}
+

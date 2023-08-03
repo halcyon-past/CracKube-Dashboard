@@ -1,0 +1,199 @@
+.SectionFirst {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 2rem;
+}
+
+.SectionFirst .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30rem;
+}
+
+.balance {
+  width: 34rem;
+  height: 13rem;
+  background-image: linear-gradient(to right, #499abd, #369dc9);
+  box-shadow: 0px 6px 24px 0px rgba(53, 55, 81, 0.06);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 3rem 1rem 3rem;
+  position: relative;
+}
+
+.balance .logo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.balance .curr {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.balance .amt {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.balance .acc {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.SectionFirst .right {
+  width: 32rem;
+  height: 30rem;
+  background-color: #202020;
+  border-radius: 0.75rem;
+}
+
+.payment {
+  height: 15rem;
+  width: 34rem;
+  background-color: #202020;
+  border-radius: 0.75rem;
+}
+
+.payment .header {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.payment .item_header {
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: 8rem 8rem 5rem 4rem 4rem;
+  place-items: center;
+  padding-left: 3rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.SectionFirst .item_header label {
+  justify-self: start;
+}
+
+.payment .item {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: 8rem 8rem 5rem 4rem 4rem;
+  place-items: center;
+  padding-left: 3rem;
+}
+
+.SectionFirst .item label {
+  justify-self: start;
+}
+
+.SectionFirst .checks {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.SectionFirst input[type="checkbox"] {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.SectionFirst input[type="checkbox"]:checked + .checks::after {
+  background-color: #2bc155;
+}
+
+.SectionFirst .checks::before {
+  content: "";
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 15px;
+  height: 16px;
+  width: 16px;
+  border: 1px solid transparent;
+  outline: 1px solid white;
+}
+
+.SectionFirst .checks::after {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 3px;
+  background-color: transparent;
+  left: 3px;
+  position: absolute;
+}
+
+.SectionFirst .records .cash {
+  color: #2bc155;
+}
+
+.SectionFirst .records .status {
+  font-size: 0.5rem;
+  padding: 5px 10px 5px 10px;
+  width: 3.5rem;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 0.4375rem;
+}
+
+.SectionFirst .records .unpaid {
+  color: #fd6162;
+  border-color: #fd6162;
+}
+
+.SectionFirst .records .paid {
+  color: #2bc155;
+  border-color: #2bc155;
+}
+
+.SectionFirst .right .header {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+.SectionFirst .right .item_header {
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: 16rem 5rem 8rem;
+  place-items: center;
+  padding-left: 3rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.SectionFirst .right .item {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: 16rem 5rem 8rem;
+  place-items: center;
+  padding: 0.7rem 3rem 0.7rem 3rem;
+  border-top: 1px solid #161717;
+}
+
+.checked {
+  /* Set the background color to black when checkbox is checked */
+  background-color: black;
+  color: white; /* Optional: Change the text color to white for better visibility */
+  /* Add any other styles for checked state as needed */
+}
